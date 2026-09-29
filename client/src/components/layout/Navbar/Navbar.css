@@ -1,0 +1,141 @@
+.navbar {
+  height: 64px;
+  padding: 0 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 900;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left {
+  gap: 16px;
+}
+
+.navbar-right {
+  gap: 18px;
+}
+
+.navbar-menu-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 22px;
+  color: #334155;
+  cursor: pointer;
+}
+
+.navbar-menu-button:hover {
+  background: #f1f5f9;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+  color: #1e293b;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar-logo-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.navbar-notification {
+  position: relative;
+  border: none;
+  background: transparent;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7px;
+  height: 7px;
+  background: #ef4444;
+  border-radius: 50%;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #1d4ed8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.navbar-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-user-name {
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar-user-role {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.navbar-logout {
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #dc2626;
+  padding: 8px 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.navbar-logout:hover {
+  background: #fef2f2;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 14px;
+  }
+
+  .navbar-user-info,
+  .navbar-logout {
+    display: none;
+  }
+}

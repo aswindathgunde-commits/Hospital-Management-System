@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1e293b;
+}
+
+/* NAVBAR */
+nav {
+  background: #087f73;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  font-size: 24px;
+}
+
+nav div {
+  display: flex;
+  gap: 8px;
+}
+
+nav button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 9px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+nav button:hover {
+  background: #065f59;
+}
+
+/* MAIN */
+main {
+  min-height: 70vh;
+  padding: 35px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+main h1 {
+  color: #0f766e;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+/* DASHBOARD CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cards div {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.cards h2 {
+  color: #087f73;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.cards p {
+  color: #64748b;
+}
+
+/* PATIENT TABLE */
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+th {
+  background: #087f73;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+tr:hover {
+  background: #f0fdfa;
+}
+
+/* DOCTORS */
+.doctor {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.doctor h3 {
+  color: #0f766e;
+  margin-bottom: 5px;
+}
+
+.doctor p {
+  color: #64748b;
+}
+
+/* APPOINTMENTS */
+.appointment {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #087f73;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.appointment p {
+  margin: 6px 0;
+  color: #475569;
+}
+
+.appointment b {
+  color: #0f766e;
+}
+
+/* FOOTER */
+footer {
+  background: #172033;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: #cbd5e1;
+  margin: 6px;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  nav h2 {
+    font-size: 20px;
+  }
+
+  main h1 {
+    font-size: 25px;
+  }
+}
